@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  prskalnik:
+    build: .
+    container_name: prskalnik
+    restart: unless-stopped
+    ports:
+      - 2023:3000

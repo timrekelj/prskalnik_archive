@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    /* Settings for every page */
+    html, body {
+        font-family: 'Poppins', sans-serif;
+        overflow-x: hidden;
+    }
+
+    /* Styles for common components */
+    .text-field-split {
+        @apply w-full md:w-[85%] lg:w-[70%] mb-5 px-4 py-2 border rounded-lg focus:outline-none focus:ring-1 focus:ring-color-turquoise border-color-gray placeholder-color-gray;
+    }
+
+    .grid-for-couples {
+        @apply grid gap-5 md:grid-cols-2 sm:grid-cols-1; 
+    }
+
+    .grid-breakup {
+        @apply h-0 md:h-auto invisible md:visible;
+    }
+
+    .dropdown-select {
+        @apply w-full md:w-[85%] lg:w-[70%] px-2 py-1 border rounded-lg focus:outline-none focus:ring-1 focus:ring-color-turquoise border-color-gray placeholder-color-gray;
+    };
+
+    .dropdown-select .vs__search::placeholder,
+    .dropdown-select .vs__dropdown-toggle,
+    .dropdown-select .vs__dropdown-menu {
+        border: none;
+    }
+}
